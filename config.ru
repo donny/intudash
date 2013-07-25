@@ -2,6 +2,7 @@ require 'dashing'
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :default_dashboard, 'intudash'
 
   helpers do
     def protected!
@@ -16,3 +17,4 @@ map Sinatra::Application.assets_prefix do
 end
 
 run Sinatra::Application
+
